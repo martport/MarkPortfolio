@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Delacruz Portfolio</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <header>
+        <div>
+            <img src="logo.jfif" alt="Logo">
+            <h1 class="logo">Mark Delacruz</h1>
+        </div>
+        <button class="hamburger" id="hamburger">&#9776;</button>
+
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#quali">Qualifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero fade-in" id="home"> 
+        <div class="hero-content">
+            <h2>Hi, I'm <span>Mark Delacruz</span></h2>
+            <p>Web Developer & Designer</p>
+            <p>I create modern and responsive websites with a focus on user experience and clean design.</p>
+            <div class="buttons">
+                <a href="resume.jfif" class="btn primary">Download CV</a>
+            </div>
+        </div>
+        <div class="profile-image">
+            <img src="profile.jpg" alt="Profile Image">
+        </div>
+    </section>
+
+    <section class="about fade-in" id="about">
+        <h2>About Me</h2>
+        <p class="intro">Hello! I'm a passionate web developer with a strong interest in creating functional websites. I specialize in front-end development using <strong>HTML, CSS, and JavaScript</strong>.</p>
+        <p>I'm currently studying <strong>Bachelor of Science in Computer Engineering</strong> at National College of Science & Technology where I’m constantly expanding my knowledge and skills in the tech field.</p>
+        
+        <h3 class="interests-title">Personal Interests</h3>
+        <div class="interests"> 
+            <div class="interest">🧪 Science</div>
+            <div class="interest">🏀 Basketball</div>
+            <div class="interest">🎮 Video Games</div>
+            <div class="interest">🎵 Music</div>
+        </div>
+    </section>
+
+    <section id="quali" class="fade-in">
+        <div class="container">
+            <h2>Qualifications</h2>
+            <h3>Education</h3>
+            <div class="timeline">
+                <div class="event">
+                    <h4>Bachelor's Degree</h4>
+                    <p>National College of Science & Technology<br>2022 - Present</p>
+                </div>
+                <div class="event">
+                    <h4>High School Diploma</h4>
+                    <p>Republic Central Colleges<br>2016 - 2022</p>
+                </div>
+            </div>
+            <h3>Skills</h3>
+            <div class="skills">
+                <div class="skill">
+                    <p>HTML</p>
+                    <div class="bar"><div class="fill" style="width: 90%;"></div></div>
+                </div>
+                <div class="skill">
+                    <p>CSS</p>
+                    <div class="bar"><div class="fill" style="width: 80%;"></div></div>
+                </div>
+                <div class="skill">
+                    <p>JavaScript</p>
+                    <div class="bar"><div class="fill" style="width: 60%;"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="fade-in">
+        <div class="contact-section">
+            <h2>Contact Me</h2>
+            <form class="contact-form" action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <hr>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> delacruz.markallan@ncst.edu.ph</p>
+                <p><i class="fas fa-phone"></i> 09161630589</p>
+                <p><i class="fas fa-map-marker-alt"></i> Bucandala 1 Imus Cavite</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; MARK DELACRUZ</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
