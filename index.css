@@ -1,6 +1,7 @@
 * {
     scroll-behavior: smooth;
 }
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -21,18 +22,27 @@ body {
 
 header {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 10px 20px;
     background: rgba(139, 139, 139, 0.8);
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
+
+header > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 header img {
     height: 50px;
     border-radius: 50%;
 }
-header div {
-    display: flex;
-}
+
 .logo {
     font-size: 24px;
     font-weight: bold;
@@ -43,6 +53,7 @@ nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
+    margin: 0;
 }
 
 nav a {
@@ -95,6 +106,7 @@ nav a {
     border: 5px solid #fff;
     transition: transform 0.3s ease;
 }
+
 .profile-image img:hover {
     transform: scale(1.05);
 }
@@ -154,10 +166,12 @@ nav a {
     max-width: 600px;
     margin: auto;
 }
+
 .timeline {
     position: relative;
     margin: 20px 0;
 }
+
 .timeline::before {
     content: '';
     position: absolute;
@@ -168,6 +182,7 @@ nav a {
     left: 50%;
     margin-left: -1px;
 }
+
 .event {
     background: white;
     padding: 10px;
@@ -177,12 +192,15 @@ nav a {
     margin: 20px 0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 .event:nth-child(odd) {
     left: 0;
 }
+
 .event:nth-child(even) {
     left: 51.5%;
 }
+
 .event::before {
     content: '';
     position: absolute;
@@ -193,26 +211,32 @@ nav a {
     top: 50%;
     transform: translateY(-50%);
 }
+
 .event:nth-child(odd)::before {
     right: -15px;
 }
+
 .event:nth-child(even)::before {
     left: -15px;
 }
+
 .skills {
     margin-top: 30px;
     text-align: left;
     color: wheat;
 }
+
 .skill {
     margin-bottom: 10px;
 }
+
 .bar {
     background: rgb(255, 252, 252);
     height: 10px;
     border-radius: 5px;
     overflow: hidden;
 }
+
 .fill {
     background: rgb(21, 21, 39);
     height: 100%;
@@ -249,6 +273,7 @@ hr {
     margin-right: 10px;
     color: #4a90e2;
 }
+
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -279,6 +304,7 @@ hr {
 .contact-form button:hover {
     background-color: #0033a0;
 }
+
 footer {
     text-align: center;
     color: wheat;
@@ -291,7 +317,9 @@ footer {
     border: none;
     cursor: pointer;
     color: #0044cc;
-    margin-right: 20px;
+    margin-left: auto;
+    position: relative;
+    z-index: 1000;
 }
 
 @media (max-width: 768px) {
@@ -306,6 +334,7 @@ footer {
         display: none;
         border-radius: 0 0 10px 10px;
         box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        z-index: 999;
     }
 
     nav ul.show {
